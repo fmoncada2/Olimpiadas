@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* Banner */
+
+#banner {
+    background-color: rgb(23, 78, 151);
+    padding: 10px;
+}
+#banner ol {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#banner ol li {
+    list-style: none;
+    margin-left: 20px;
+}
+#banner ol li a {
+    text-decoration: none;
+    color: white;
+    transition: background-color .5s;
+}
+#banner ol li a:hover {
+    background-color: rgba(17, 4, 136, 0.616);
+    color: burlywood;
+    border-radius: 5px;
+}
+
+/*Imagen y Texto Principal*/
+
+#img {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#img img{
+    overflow:hidden;
+    border-radius: 10px;
+}
+#img img:hover {
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+#img figcaption{
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    color: crimson;
+}
+#img h2{
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    color: green;
+}
+
+/* Navegacion*/
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+ul li {
+    list-style: none ;
+}
+ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* Botones*/
+
+#botones {
+    margin-top: 20px;
+}
+.miBoton {
+    background-color: rgb(6, 58, 141);
+    font-style: italic;
+    margin: 0px 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    position: relative;
+} 
+.miBoton:hover { color: white; } 
+.miBoton.styleOne::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    /* Se convierte en el background está una capa mas alejado del usuarios*/
+    border: 2px solid rgb(6, 58, 141);
+    transition: top, left, right, bottom, 200ms ease-in-out;
+} 
+.miBoton.styleOne:hover::before{
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4p 
+} 
+
+/* Imagenes*/
+#principal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+.imagenes {
+    box-shadow: 4px 5px 8px 5px rgb(161, 159, 159);
+}
+.texto {
+    font-family: 'Lobster', cursive;
+    color: rgb(4, 135, 241);
+    margin-bottom: 5px;
+}
+
+/* Tabla*/
+
+#tabla {
+    display: inline;
+    margin: 0px;
+}
+
+th, td {
+    width: 35%;
+    padding: 20px;
+    border: 3px solid yellow;
+}
+
+#tabla td a{
+    text-decoration: none;
+    color: black;
+}
+
+#tab{
+    text-align: center;
+    width: 100%;
+}
+
+/* Detalles de Eventos*/
+
+#detalles {
+    flex-direction: row;
+    text-align: center;
+}
+
+#detalles h3{
+    font-family: 'Lobster', cursive;
+    color: rgb(51, 61, 153);
+}
+
+#detalles p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Animacion*/
+
+@keyframes aumento {
+    0% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+    
+}
+
+
+
